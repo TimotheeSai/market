@@ -10,13 +10,13 @@ import green from "@material-ui/core/colors/green";
 
 // import ReactDOM from  "react-dom"
 
-
+const imgFolder = process.env.PUBLIC_URL + "/img/"
 const productList = [
     {
         id: 1,
         name: "Tomates",
         description: "Les bonnes tomates",
-        imagePath: "market/img/tomates.jpg",
+        imagePath: imgFolder +"tomates.jpg",
         category: "fruit",
         unitPrice: 2.50,
         quantity: 0,
@@ -26,7 +26,7 @@ const productList = [
         id:2,
         name: "Courgettes",
         description: "Les bonnes courgettes",
-        imagePath: "market/img/courgettes.jpg",
+        imagePath: imgFolder + "courgettes.jpg",
         category: "legume",
         unitPrice: 1.00,
         quantity: 0,
@@ -37,7 +37,7 @@ const productList = [
         id:3,
         name: "Bananes",
         description: "Banananananana",
-        imagePath: "market/img/bananes.jpg",
+        imagePath: imgFolder + "bananes.jpg",
         category: "fruit",
         unitPrice: 0.75,
         quantity: 0,

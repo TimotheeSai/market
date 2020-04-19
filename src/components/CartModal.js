@@ -51,18 +51,9 @@ class EmailField extends Component {
         this.setState({ value })
     }
 
-    render() {
+    render () {
         const { name, placeholder, required } = this.props
         return (
-            // <input
-            //     autocomplete="tel"
-            //     name={name}
-            //     onChange={this.handleChange}
-            //     placeholder={placeholder}
-            //     required={required}
-            //     type="tel"
-            //     value={this.state.value}
-            // />
             <TextField
                 autoComplete="email"
                 label="Email"
@@ -114,7 +105,7 @@ function UserInfo (props) {
     return (
         <div style={{flex: 1, paddingBottom: 30}}>
             <DialogContentText>Renseignez votre email</DialogContentText>
-            {/*<EmailField value={mail}/>*/}
+            <EmailField value={mail}/>
             <DialogContentText>Selectionnez la date et le lieu de récupération</DialogContentText>
             <TextField
                 select
