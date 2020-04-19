@@ -188,8 +188,8 @@ class ProductTable extends Component {
             newSelected = newSelected.concat(this.state.selected, name);
         } else if (selectedIndex === 0) {
             newSelected = newSelected.concat(this.state.selected.slice(1));
-        // } else if (selectedIndex === this.state.selected.length - 1) {
-        //     newSelected = newSelected.concat(this.state.selected.slice(0, -1));
+        } else if (selectedIndex === this.state.selected.length - 1) {
+            newSelected = newSelected.concat(this.state.selected.slice(0, -1));
         } else if (selectedIndex > 0) {
             newSelected = newSelected.concat(
                 this.state.selected.slice(0, selectedIndex),
