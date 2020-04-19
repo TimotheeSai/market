@@ -183,7 +183,7 @@ class CartModal extends Component {
             cartList: this.props.productList,
             open: true,
         });
-        this.table.current.setState({rows: this.props.productList})
+        // this.table.current.setState({rows: this.props.productList})
     };
 
     handleClose = () => {
