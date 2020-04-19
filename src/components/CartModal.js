@@ -228,11 +228,11 @@ class CartModal extends Component {
                             Recapitulatif de la commande
                         </DialogContentText>
 
-                        <ProductTable
-                            ref={this.table}
-                            rows={this.state.cartList}
-                            removeFromCart={this.props.removeFromCart}
-                        />
+                        {/*<ProductTable*/}
+                        {/*    ref={this.table}*/}
+                        {/*    rows={this.state.cartList}*/}
+                        {/*    removeFromCart={this.props.removeFromCart}*/}
+                        {/*/>*/}
 
                         <DialogContentText variant={'h5'} style={{paddingTop: 24,  textAlign: "right",}}>
                             Total {this.props.cartValue} €

@@ -56,11 +56,11 @@ class Cart extends Component {
             <Grid item  xs={12}>
                 {this.state.cartList.length ? (
                     <div>
-                        {/*<CartModal ref={this.modal}*/}
-                        {/*           productList={this.state.cartList}*/}
-                        {/*           cartValue={this.state.cartValue}*/}
-                        {/*           removeFromCart={this.removeFromCart}*/}
-                        {/*/>*/}
+                        <CartModal ref={this.modal}
+                                   productList={this.state.cartList}
+                                   cartValue={this.state.cartValue}
+                                   removeFromCart={this.removeFromCart}
+                        />
                         <div className="cartList">
                             <List dense={false}>
                                 {this.state.cartList.map((prd, index) => {
