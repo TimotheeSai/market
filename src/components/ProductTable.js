@@ -188,8 +188,8 @@ class ProductTable extends Component {
             newSelected = newSelected.concat(this.state.selected, name);
         } else if (selectedIndex === 0) {
             newSelected = newSelected.concat(this.state.selected.slice(1));
-        } else if (selectedIndex === this.state.selected.length - 1) {
-            newSelected = newSelected.concat(this.state.selected.slice(0, -1));
+        // } else if (selectedIndex === this.state.selected.length - 1) {
+        //     newSelected = newSelected.concat(this.state.selected.slice(0, -1));
         } else if (selectedIndex > 0) {
             newSelected = newSelected.concat(
                 this.state.selected.slice(0, selectedIndex),
@@ -224,15 +224,14 @@ class ProductTable extends Component {
 
     render () {
         console.log("---------------")
-        console.log(this.state)
         const isSelected = (name) => this.state.selected.indexOf(name) !== -1;
         const {classes} = this.props;
         const emptyRows = this.state.rowsPerPage - Math.min(this.state.rowsPerPage, this.state.rows.length - this.state.page * this.state.rowsPerPage);
+        console.log(this.state)
 
         return (
             <div className={classes.root}>
                 <Paper className={classes.paper}>
-                    {/*<ProductTableToolbar numSelected={selected.length} />*/}
                     <TableContainer>
                         <Table
                             className={classes.table}
