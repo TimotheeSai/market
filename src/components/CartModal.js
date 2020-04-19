@@ -218,10 +218,10 @@ class CartModal extends Component {
                         Valider mon panier
                     </DialogTitle>
                     <DialogContent >
-                        {/*<DialogActions style={{flex: 1}}>*/}
-                        {/*   <UserInfo markets={market}*/}
-                        {/*             setUserInfo={this.setUserInfo}/>*/}
-                        {/*</DialogActions>*/}
+                        <DialogActions style={{flex: 1}}>
+                           <UserInfo markets={market}
+                                     setUserInfo={this.setUserInfo}/>
+                        </DialogActions>
 
                         <DialogContentText>
                             Recapitulatif de la commande
