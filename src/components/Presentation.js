@@ -15,7 +15,6 @@ const market = [
 ]
 
 export default function Presentation(props) {
-    console.log(props.presentation)
     return (
         <React.Fragment>
             <CssBaseline />
