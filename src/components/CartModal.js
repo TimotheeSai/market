@@ -237,24 +237,24 @@ class CartModal extends Component {
                         <DialogContentText variant={'h5'} style={{paddingTop: 24,  textAlign: "right",}}>
                             Total {this.props.cartValue} €
                         </DialogContentText>
+                        <DialogActions>
+                            <TextField
+                                label="Remarque"
+                                style={{ margin: 15 }}
+                                placeholder="Remarque"
+                                // helperText="Remarque pour le producteur"
+                                fullWidth
+                                margin="normal"
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                                variant="outlined"
+                                multiline
+                                rows={3}
+                            />
+                        </DialogActions>
                     </DialogContent>
-
-
                     <DialogActions style={{flexDirection: 'column'}}>
-                        <TextField
-                            label="Remarque"
-                            style={{ margin: 15 }}
-                            placeholder="Remarque"
-                            // helperText="Remarque pour le producteur"
-                            fullWidth
-                            margin="normal"
-                            InputLabelProps={{
-                                shrink: true,
-                            }}
-                            variant="outlined"
-                            multiline
-                            rows={3}
-                        />
                         <ButtonGroup variant="contained"
                                      color="primary"
                                      aria-label="contained primary button group"
