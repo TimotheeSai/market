@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/es/Typography/Typography";
 import CardMedia from "@material-ui/core/es/CardMedia/CardMedia";
 import Card from "@material-ui/core/es/Card/Card";
 import ButtonGroup from "@material-ui/core/es/ButtonGroup/ButtonGroup";
-import Slide from "@material-ui/core/Slide";
+// import Slide from "@material-ui/core/Slide";
 
 const classes = {
     root: {
@@ -83,9 +83,9 @@ export default class ProductModal extends Component {
 
 
     render () {
-        const Transition = React.forwardRef(function Transition(props, ref) {
-            return <Slide direction="up" ref={ref} {...props} />;
-        });
+        // const Transition = React.forwardRef(function Transition(props, ref) {
+        //     return <Slide direction="up" ref={ref} {...props} />;
+        // });
 
         return (
             <div >
