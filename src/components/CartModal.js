@@ -15,9 +15,9 @@ import ProductTable from "./ProductTable"
 
 
 const market = [
-    {city: "Vincennes", days:["mardi", "vendredi", "dimanche"], hours: ["07:30", "13:30"], location: "Rue de Fontenay"},
-    {city: "Montrouge", days:["jeudi", "dimanche"], hours: ["08:00", "13:00"], location: "Victor Hugo"},
-    {city: "Joinville-Le-Pont", days:["jeudi", "dimanche"], hours: ["08:00", "13:00"], location: "Place du 8 Mai 1945"},
+    {city: "Vincennes", days:["Mardi", "Vendredi", "Dimanche"], hours: ["07:30", "13:30"], location: "Rue de Fontenay"},
+    {city: "Montrouge", days:["Jeudi", "Dimanche"], hours: ["08:00", "13:00"], location: "Victor Hugo"},
+    {city: "Joinville-Le-Pont", days:["Jeudi", "Dimanche"], hours: ["08:00", "13:00"], location: "Place du 8 Mai 1945"},
 ]
 
 
@@ -54,17 +54,27 @@ class EmailField extends Component {
     render () {
         const { name, placeholder, required } = this.props
         return (
-            <TextField
-                autoComplete="email"
-                label="Email"
-                value={this.state.value}
-                onChange={this.handleChange}
-                required={required}
-                placeholder={placeholder}
-                name={name}
-                type="email"
-                style={{flex:1, minWidth: 200, paddingBottom: 24}}
-            />
+            <div>
+                <TextField
+                    autoComplete="email"
+                    label="Votre  email"
+                    value={this.state.value}
+                    onChange={this.handleChange}
+                    required={required}
+                    placeholder={placeholder}
+                    name={name}
+                    type="email"
+                    style={{flex:1, minWidth: 200, paddingBottom: 24}}
+                />
+                <TextField
+                    label="Votre nom"
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                    style={{flex:1, minWidth: 200}}
+                    placeholder={"Nom"}
+                />
+            </div>
+
         )
     }
 
@@ -104,9 +114,9 @@ function UserInfo (props) {
 
     return (
         <div style={{flex: 1, paddingBottom: 30}}>
-            <DialogContentText>Renseignez votre email</DialogContentText>
+            <DialogContentText style={{paddingBottom: 15}}>Renseignez votre email</DialogContentText>
             <EmailField value={mail}/>
-            <DialogContentText>Selectionnez la date et le lieu de récupération</DialogContentText>
+            <DialogContentText style={{paddingBottom: 15}}>Selectionnez la date et le lieu de récupération</DialogContentText>
             <TextField
                 select
                 label="Marché"
@@ -173,7 +183,7 @@ class CartModal extends Component {
             cartList: this.props.productList,
             open: true,
         });
-        // this.table.current.setState({rows: this.props.productList})
+        this.table.current.setState({rows: this.props.productList})
     };
 
     handleClose = () => {
@@ -235,7 +245,7 @@ class CartModal extends Component {
                             label="Remarque"
                             style={{ margin: 15 }}
                             placeholder="Remarque"
-                            helperText="Remarque pour le producteur"
+                            // helperText="Remarque pour le producteur"
                             fullWidth
                             margin="normal"
                             InputLabelProps={{
