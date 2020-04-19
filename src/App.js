@@ -4,7 +4,6 @@ import './App.css';
 import NavBar from './components/NavBar.js'
 import ProductContainer from "./components/ProductContainer.js";
 import Presentation from "./components/Presentation.js";
-import Background from "./img/background_vert.jpg"
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import green from "@material-ui/core/colors/green";
 
@@ -47,15 +46,16 @@ const productList = [
 ]
 
 const profile = {
-    src: "market/img/jean-mi/profile.jpg",
+    src: imgFolder + "jean-mi/profile.jpg",
     name: "Jean Michel Exemple",
     presentation: `Venez decouvrir les bon produits de Jean Mi, même pendant l'épidemie. \n 
     Cultivés par ses soins, ses légumes sont bios et responsables`
 }
 
+const background = imgFolder + "background_vert.jpg"
 
 const style = {
-    backgroundImage: `url(${Background})`,
+    backgroundImage: `url(${background})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',

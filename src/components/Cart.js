@@ -52,7 +52,6 @@ class Cart extends Component {
     };
 
     render () {
-        console.log(this.state)
         return (
             <Grid item  xs={12}>
                 {this.state.cartList.length ? (
