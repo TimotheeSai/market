@@ -114,7 +114,7 @@ function UserInfo (props) {
     return (
         <div style={{flex: 1, paddingBottom: 30}}>
             <DialogContentText>Renseignez votre email</DialogContentText>
-            <EmailField value={mail}/>
+            {/*<EmailField value={mail}/>*/}
             <DialogContentText>Selectionnez la date et le lieu de récupération</DialogContentText>
             <TextField
                 select
