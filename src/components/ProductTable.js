@@ -222,7 +222,9 @@ class ProductTable extends Component {
         })
     };
 
-    render (){
+    render () {
+        console.log("---------------")
+        console.log(this.state)
         const isSelected = (name) => this.state.selected.indexOf(name) !== -1;
         const {classes} = this.props;
         const emptyRows = this.state.rowsPerPage - Math.min(this.state.rowsPerPage, this.state.rows.length - this.state.page * this.state.rowsPerPage);

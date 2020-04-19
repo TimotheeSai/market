@@ -59,7 +59,7 @@ class ProductContainer extends Component {
     render () {
         return (
             <Container id={"ProductContainer"}
-                       style={{ padding: 40, margin: 'auto', background: "white"}} maxWidth={"xl"}>
+                       style={{ padding: 40, margin: 'auto', background: "white"}} maxWidth={"lg"}>
                 <Typography gutterBottom variant="h4">Les Produits</Typography>
 
                 <Toolbar>

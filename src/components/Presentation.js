@@ -18,7 +18,7 @@ export default function Presentation(props) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="xl" style={{ backgroundColor: 'white'}}>
+            <Container maxWidth="lg" style={{ backgroundColor: 'white'}}>
                 <Grid container spacing={1} style={{padding: 40}}>
                     <Grid item xs={12} sm={4} lg={4} xl={4}>
                         <Card style={{maxWidth: 500}}>
