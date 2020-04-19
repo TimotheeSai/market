@@ -8,7 +8,7 @@ import Background from "./img/background_vert.jpg"
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import green from "@material-ui/core/colors/green";
 
-import ReactDOM from  "react-dom"
+// import ReactDOM from  "react-dom"
 
 
 const productList = [
@@ -16,7 +16,7 @@ const productList = [
         id: 1,
         name: "Tomates",
         description: "Les bonnes tomates",
-        imagePath: "/img/tomates.jpg",
+        imagePath: "market/img/tomates.jpg",
         category: "fruit",
         unitPrice: 2.50,
         quantity: 0,
@@ -26,7 +26,7 @@ const productList = [
         id:2,
         name: "Courgettes",
         description: "Les bonnes courgettes",
-        imagePath: "/img/courgettes.jpg",
+        imagePath: "market/img/courgettes.jpg",
         category: "legume",
         unitPrice: 1.00,
         quantity: 0,
@@ -37,7 +37,7 @@ const productList = [
         id:3,
         name: "Bananes",
         description: "Banananananana",
-        imagePath: "/img/bananes.jpg",
+        imagePath: "market/img/bananes.jpg",
         category: "fruit",
         unitPrice: 0.75,
         quantity: 0,
@@ -47,7 +47,7 @@ const productList = [
 ]
 
 const profile = {
-    src: "/img/jean-mi/profile.jpg",
+    src: "market/img/jean-mi/profile.jpg",
     name: "Jean Michel Exemple",
     presentation: `Venez decouvrir les bon produits de Jean Mi, même pendant l'épidemie. \n 
     Cultivés par ses soins, ses légumes sont bios et responsables`

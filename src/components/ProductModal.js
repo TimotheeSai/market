@@ -43,6 +43,7 @@ const classes = {
 export default class ProductModal extends Component {
     constructor (props) {
         super(props);
+        this.wrapper = React.createRef();
         this.state = {
             productInfo: this.props.productInfo,
             open: false,
@@ -87,8 +88,9 @@ export default class ProductModal extends Component {
         });
 
         return (
-            <div>
+            <div >
                 <Dialog
+                    ref={this.wrapper}
                     open={this.state.open}
                     keepMounted
                     // TransitionComponent={null}

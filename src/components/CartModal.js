@@ -64,7 +64,7 @@ class EmailField extends Component {
             //     value={this.state.value}
             // />
             <TextField
-                autocomplete="email"
+                autoComplete="email"
                 label="Email"
                 value={this.state.value}
                 onChange={this.handleChange}
@@ -220,8 +220,7 @@ class CartModal extends Component {
                     </DialogTitle>
                     <DialogContent >
                         <DialogActions style={{flex: 1}}>
-                           <UserInfo ref={this.userInfo}
-                                     markets={market}
+                           <UserInfo markets={market}
                                      setUserInfo={this.setUserInfo}/>
                         </DialogActions>
 
