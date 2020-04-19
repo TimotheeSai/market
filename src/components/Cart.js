@@ -62,25 +62,25 @@ class Cart extends Component {
                                    removeFromCart={this.removeFromCart}
                         />
                         <div className="cartList">
-                            {/*<List dense={false}>*/}
-                            {/*    {this.state.cartList.map((prd, index) => {*/}
-                            {/*        return(*/}
-                            {/*            <div key={prd.id}>*/}
-                            {/*                <ListItem >*/}
-                            {/*                    <ListItemText*/}
-                            {/*                        primary={`${prd.name}    x ${prd.quantity}`}*/}
-                            {/*                        secondary={`${prd.price} €`}*/}
-                            {/*                    />*/}
-                            {/*                    <Button onClick={() => {this.removeFromCart(prd)}}>*/}
-                            {/*                        <RemoveShoppingCartOutlinedIcon />*/}
-                            {/*                    </Button>*/}
-                            {/*                </ListItem>*/}
-                            {/*                {index < this.state.cartList.length -1 ?*/}
-                            {/*                    <Divider variant="inset" component="li"/> : null}*/}
-                            {/*            </div>*/}
-                            {/*        )}*/}
-                            {/*    )}*/}
-                            {/*</List>*/}
+                            <List dense={false}>
+                                {this.state.cartList.map((prd, index) => {
+                                    return(
+                                        <div key={prd.id}>
+                                            <ListItem >
+                                                <ListItemText
+                                                    primary={`${prd.name}    x ${prd.quantity}`}
+                                                    secondary={`${prd.price} €`}
+                                                />
+                                                <Button onClick={() => {this.removeFromCart(prd)}}>
+                                                    <RemoveShoppingCartOutlinedIcon />
+                                                </Button>
+                                            </ListItem>
+                                            {index < this.state.cartList.length -1 ?
+                                                <Divider variant="inset" component="li"/> : null}
+                                        </div>
+                                    )}
+                                )}
+                            </List>
                             <Divider variant="middle" />
                             <p>
                                 {`Total ${this.state.cartValue} €`}
